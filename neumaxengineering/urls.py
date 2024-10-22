@@ -4,6 +4,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('', include('accounts.urls')),
+    path('mysite/', include('mysite.urls')),
     path('admin/', include('myadmin.urls')),
 ]
 if settings.DEBUG:

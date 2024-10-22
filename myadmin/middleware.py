@@ -1,10 +1,10 @@
+from django.utils.deprecation import MiddlewareMixin
 from django.contrib.auth import logout
 from django.shortcuts import redirect
 from django.contrib import messages
 from django.utils import timezone
 from django.conf import settings
 from accounts import models
-from django.utils.deprecation import MiddlewareMixin
 
 
 class SessionExpirationMiddleware:
